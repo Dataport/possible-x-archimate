@@ -875,7 +875,7 @@ D1 is &quot;accredited&quot; at possible federation, is member, may consume or p
     <element xsi:type="archimate:ServingRelationship" id="id-9e2ae3bcef8a4eb7bf535f4429d1ffd1" source="id-3b524632bbdb4c8e8ffa12b02cc6e67a" target="id-84b9f9a0f5914dc0b661da377efc0503"/>
   </folder>
   <folder name="Views" id="id-9da097a3564a43e3a9b1ff55c16765b0" type="diagrams">
-    <folder name="Frauenhofer" id="id-677a354f6bf548809e58b09a1f0535e8">
+    <folder name="Fraunhofer" id="id-677a354f6bf548809e58b09a1f0535e8">
       <element xsi:type="archimate:ArchimateDiagramModel" name="comprehensive" id="id-a1a3de1c2b3a4f1fa70ffcc7f9e64426">
         <child xsi:type="archimate:DiagramObject" id="id-2f50572301ed468faf63bbce2a53db5a" textAlignment="1" archimateElement="id-8e781180ec7d4c33bc86915fc1242551" type="1">
           <bounds x="563" y="1008" width="1285" height="612"/>
