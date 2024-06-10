@@ -15,6 +15,7 @@
     <element xsi:type="archimate:BusinessService" name="Data Transfer" id="id-a5d1a173c9e6444ea04b9d3844132e1f"/>
     <element xsi:type="archimate:BusinessService" name="Data Product Offering Creation" id="id-693e264bacdb4820a16067ffe3848df4"/>
     <element xsi:type="archimate:BusinessService" name="Service Consumption and Usage" id="id-268724473d5d40168f64b8d35523275c"/>
+    <element xsi:type="archimate:BusinessService" name="Business Service" id="id-8b7adef97e92402388d12a3d659d3edf"/>
   </folder>
   <folder name="Application" id="id-bea60daa04e54304b4efdf74b68768d6" type="application">
     <element xsi:type="archimate:ApplicationService" name="SSI Identity Generation" id="id-5784139dab0f438f953e1de9abe053d4"/>
@@ -27,7 +28,9 @@
     <element xsi:type="archimate:ApplicationService" name="Technical User Registration Tool" id="id-465c892d6077493da828d6d1fc361f51"/>
     <element xsi:type="archimate:ApplicationService" name="OIDC IDP" id="id-ada8ae2980d3491fba3b7ac2c172088e"/>
     <element xsi:type="archimate:ApplicationService" name="Trust Services" id="id-ea8c6dac1de94163b87922e69d2f42a1"/>
-    <element xsi:type="archimate:ApplicationComponent" name="POSSIBLE-X Registration Portal" id="id-e4060726a9b24eaebfebb12b03773fba"/>
+    <element xsi:type="archimate:ApplicationComponent" name="POSSIBLE-X Registration Portal" id="id-e4060726a9b24eaebfebb12b03773fba">
+      <property/>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" name="XFSC Organisational Credential Manager" id="id-1569022945a840ac917a95fa4882736d"/>
     <element xsi:type="archimate:ApplicationComponent" name="XFSC Personal Credential Manager" id="id-ba4d6e6007984130b0fed27a8c60d7c7"/>
     <element xsi:type="archimate:ApplicationComponent" name="XFSC Trust Services API (TSA)" id="id-93f9354850de49bfac20f4933eea773b"/>
@@ -94,6 +97,7 @@
     <element xsi:type="archimate:ApplicationComponent" name="Gaia-X Compliance Service (copy)" id="id-3b201a128866470283311c5b548ad9d5"/>
     <element xsi:type="archimate:ApplicationComponent" name="Gaia-X Compliance Service (copy)" id="id-f27fa8ad800049ccb4a59e5762f8a6d8"/>
     <element xsi:type="archimate:ApplicationService" name="Data Transfer Initiation UI" id="id-e50095cc8f7e47609fbc7e783d0b5565"/>
+    <element xsi:type="archimate:ApplicationService" name="Application Service" id="id-c1e46eef51f449158551ff5f2b61a768"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-52c689c041a149eaa2529ffdfdb414ad" type="technology"/>
   <folder name="Motivation" id="id-b06e726e65244ce99c90bc3b1ad8b481" type="motivation"/>
@@ -279,7 +283,7 @@
           <sourceConnection xsi:type="archimate:Connection" id="id-1e55b331af3e4591bdd37375dfa39fb9" source="id-8fde2ee53ef744a9802f2010d16df956" target="id-5d96c68edb664b4cbec989c77930e1f8" archimateRelationship="id-76ca781cfa824c14bd3c8974777aac07"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-a1f0bbb42c40426aa1f635cbdf03e29d" targetConnections="id-8ae450d1da0d417f92f5b78230e9ade4" archimateElement="id-268724473d5d40168f64b8d35523275c">
-          <bounds x="984" y="96" width="120" height="55"/>
+          <bounds x="1101" y="78" width="120" height="55"/>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-6fb463828cc64c3e8f179a4156dab9ec" textAlignment="1" archimateElement="id-979afa3f686444708a930fc48c479ffa">
@@ -676,8 +680,9 @@
         <child xsi:type="archimate:DiagramObject" id="id-c3b964565cf941eda92306f5a7ea835c" targetConnections="id-bdbd321f04774667bf28cf64afb62fea id-6db8ff05765846a3a5152b1dde377671" archimateElement="id-e377532025734590a069ed19a308f2d1" type="1">
           <bounds x="600" y="36" width="162" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-082cc976eaf8448796080095831e100f" source="id-c3b964565cf941eda92306f5a7ea835c" target="id-9c44f555e0d244aaae5544318421b697" archimateRelationship="id-c3fdd06727e94858baba66f79e66f633">
-            <bendpoint startX="-129" startY="21" endX="143" endY="-495"/>
-            <bendpoint startX="-129" startY="513" endX="143" endY="-3"/>
+            <bendpoint startX="-117" startY="21" endX="155" endY="-495"/>
+            <bendpoint startX="-117" startY="273" endX="155" endY="-243"/>
+            <bendpoint startX="-117" startY="513" endX="155" endY="-3"/>
           </sourceConnection>
           <sourceConnection xsi:type="archimate:Connection" id="id-5fcb22a1c62146b9a864ee5dc41e0192" source="id-c3b964565cf941eda92306f5a7ea835c" target="id-284aeb2323264abd891fced60e393b64" archimateRelationship="id-64b42fd27c6945a28e0132129fb64ada">
             <bendpoint startX="147" startY="-3" endX="-138" endY="-399"/>
@@ -722,7 +727,7 @@
           </child>
         </child>
         <child xsi:type="archimate:Group" id="id-988d5f6adb274ff6a769b8c2714ad058" name="POSSIBLE-X IAM" textAlignment="1">
-          <bounds x="18" y="60" width="511" height="445"/>
+          <bounds x="18" y="60" width="535" height="445"/>
           <child xsi:type="archimate:DiagramObject" id="id-1c777e864afe4deca00d787dad6a7676" archimateElement="id-8f6266fda8284f7d969b3c61feb859af" type="1">
             <bounds x="336" y="264" width="162" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-41dbf3efb7934af3804a1738e0862b72" source="id-1c777e864afe4deca00d787dad6a7676" target="id-46bc353cf4ee4613abb03dc4e36a617c" archimateRelationship="id-f904f5feb6d3408bba6b61233bbe79c6"/>
@@ -764,6 +769,14 @@
             <sourceConnection xsi:type="archimate:Connection" id="id-a1693a2731cb4f42a53a80b6f1861d37" source="id-18f8cff41a984c4c87caf54cd78419d3" target="id-46bc353cf4ee4613abb03dc4e36a617c" archimateRelationship="id-b6cda672cc864262b1ced41b56c8e679">
               <bendpoint startX="99" startY="81" endX="-141" endY="9"/>
             </sourceConnection>
+          </child>
+          <child xsi:type="archimate:Note" id="id-0439a9e0b8244c59a8ed3aad0a1719de" textAlignment="1">
+            <bounds x="204" y="60" width="100" height="32"/>
+            <content>Status: Exist</content>
+          </child>
+          <child xsi:type="archimate:Note" id="id-3fcd72fb09e741f19714909de13415bf" textAlignment="1">
+            <bounds x="432" y="66" width="97" height="37"/>
+            <content>Status: on hold</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-8ee98c668c67476b9a47b597d242908a" archimateElement="id-c01c988c3fb6445482934daabcc5245d" type="1">
@@ -810,7 +823,7 @@ Also manages and supplies specific configuration for the instances of those dece
             </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-82c99336def54f7b9cbcbf04469cdd45" archimateElement="id-248871ca5fa5460a85918ee4d0cb3861" type="1">
-            <bounds x="36" y="144" width="120" height="55"/>
+            <bounds x="36" y="120" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-0bdbd49943af49b8a74ea94fd647e448" source="id-82c99336def54f7b9cbcbf04469cdd45" target="id-4d1495e6b96a4147819eb7cc8d5f96d0" archimateRelationship="id-d5e75fe7cb234b10b80c6c57ec8e66ac"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-b240720a70fc4f88848fb3e29bc55927" archimateElement="id-75c9d17846f444c2b265e0e6ae6638db" type="1">
