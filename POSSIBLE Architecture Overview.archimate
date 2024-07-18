@@ -130,6 +130,7 @@
     <element xsi:type="archimate:ApplicationComponent" name="Access Management Component" id="id-fd0de158b21b485086affaa045c33be5"/>
     <element xsi:type="archimate:ApplicationComponent" name="AuthZ Policy Engine" id="id-5f581506f035408c907c98eb6fcc9e4c"/>
     <element xsi:type="archimate:ApplicationInterface" name="OIDC" id="id-f8a98b704611434cb3bb48a711c9b216"/>
+    <element xsi:type="archimate:ApplicationComponent" name="EDC VC Module" id="id-d322c67ce39e4e798c6e074d23154473"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-52c689c041a149eaa2529ffdfdb414ad" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Merlot DID-as-a-service" id="id-b8b1d7707b8c4e99aaea65ef8762056e"/>
@@ -140,6 +141,7 @@
     <element xsi:type="archimate:SystemSoftware" name="VC Plugin Module to be Developed" id="id-5b92d0cda93d461980903b91aaa8e07f"/>
     <element xsi:type="archimate:SystemSoftware" name="VP Plugin Module to be Developed" id="id-614bce49ddaa4fdb935e60e84947746a"/>
     <element xsi:type="archimate:TechnologyInterface" name="Keycloak Internal Storage" id="id-a6eb279064794755af6bd8e0a273af7b"/>
+    <element xsi:type="archimate:SystemSoftware" name="BMW EDC DID/JWT code" id="id-a63199328fe444ee9e5539c0eed01244"/>
   </folder>
   <folder name="Motivation" id="id-b06e726e65244ce99c90bc3b1ad8b481" type="motivation">
     <element xsi:type="archimate:Stakeholder" name="BNetzA" id="id-a6df982caa454052837765cba4d231ff"/>
@@ -414,6 +416,8 @@
     <element xsi:type="archimate:RealizationRelationship" id="id-36c52c5844a347608c7c76c2686e4b2e" source="id-7fd2aac92d064953b3571448cb97f1e0" target="id-fd0de158b21b485086affaa045c33be5"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-cdfbc13804e0408aa810c3f4731ad2e5" source="id-614bce49ddaa4fdb935e60e84947746a" target="id-635350371a4847e1959965c9983302c9"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ceb27e381dc8418da9d04e8faf110b2f" source="id-7fd2aac92d064953b3571448cb97f1e0" target="id-a6eb279064794755af6bd8e0a273af7b"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-1a39bee93a9741febb8c22ff71292423" source="id-a63199328fe444ee9e5539c0eed01244" target="id-d322c67ce39e4e798c6e074d23154473"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-1e15ed0307e146bdb276c60892f810e1" source="id-0b03bfb969aa49c6a2d07f147cc7b4bd" target="id-d322c67ce39e4e798c6e074d23154473"/>
   </folder>
   <folder name="Views" id="id-24b267517651445087010f0ab5bf6706" type="diagrams">
     <folder name="Archive" id="id-ba419053216f4d8d8584b7ff46b96df4">
@@ -444,7 +448,7 @@
               <bounds x="84" y="192" width="176" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-9c44f555e0d244aaae5544318421b697" targetConnections="id-ed977d011f4b4664acc937570578c19b id-082cc976eaf8448796080095831e100f" archimateElement="id-20694f1ea31748da9bf7442baae7b683" type="1">
-              <bounds x="288" y="36" width="169" height="55"/>
+              <bounds x="288" y="72" width="169" height="55"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-7a5651d649594a8c938b22ecf7e0c9e1" targetConnections="id-1ae3fe1a803e47068e27740068bfb430 id-f7cb203f1ad048289f99ff2335f337a3" archimateElement="id-7ab86c3c664c450a91564906a8ae2179" type="1">
               <bounds x="300" y="192" width="157" height="55"/>
@@ -472,6 +476,9 @@
                 <bendpoint startX="635" startY="-543" endX="-114" endY="33"/>
               </sourceConnection>
             </child>
+            <child xsi:type="archimate:DiagramObject" id="id-e57a4f2275c3474393106f66ebbcd727" targetConnections="id-0ac7b86287664f03a51ba1b0d308351a id-b15bdd51f33d4bbca5c806850b9fd2d2" archimateElement="id-d322c67ce39e4e798c6e074d23154473">
+              <bounds x="84" y="72" width="120" height="55"/>
+            </child>
           </child>
           <child xsi:type="archimate:Group" id="id-988d5f6adb274ff6a769b8c2714ad058" name="POSSIBLE-X IAM" textAlignment="1">
             <bounds y="60" width="655" height="445"/>
@@ -495,6 +502,7 @@
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-7c7f85bf55d645f4a6a4e206efdc42a4" archimateElement="id-0b03bfb969aa49c6a2d07f147cc7b4bd">
               <bounds x="132" y="264" width="109" height="55"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-b15bdd51f33d4bbca5c806850b9fd2d2" source="id-7c7f85bf55d645f4a6a4e206efdc42a4" target="id-e57a4f2275c3474393106f66ebbcd727" archimateRelationship="id-1e15ed0307e146bdb276c60892f810e1"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-45c4071d08f94105a965bd5147531865" archimateElement="id-63e3eeb4a4dd40e189791cd13179436f">
               <bounds x="253" y="264" width="104" height="55"/>
@@ -722,6 +730,10 @@ Also manages and supplies specific configuration for the instances of those dece
         <child xsi:type="archimate:DiagramObject" id="id-af3435d6d6114c5584c36acf014292cf" archimateElement="id-614bce49ddaa4fdb935e60e84947746a">
           <bounds x="756" y="972" width="204" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d5ee2b61f1384323866aab101ad5fc7b" source="id-af3435d6d6114c5584c36acf014292cf" target="id-9f43365af7f34dbaa4c54e0d3d90a529" archimateRelationship="id-cdfbc13804e0408aa810c3f4731ad2e5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0df64455c11b4f699e0e8a52bf2d2b6e" archimateElement="id-a63199328fe444ee9e5539c0eed01244">
+          <bounds x="312" y="1104" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0ac7b86287664f03a51ba1b0d308351a" source="id-0df64455c11b4f699e0e8a52bf2d2b6e" target="id-e57a4f2275c3474393106f66ebbcd727" archimateRelationship="id-1a39bee93a9741febb8c22ff71292423"/>
         </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="ARCHIVE POSSIBLE Components and Relationships" id="id-fcb585313c2f45019471713108e86072">
