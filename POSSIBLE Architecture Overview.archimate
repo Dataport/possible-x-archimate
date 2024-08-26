@@ -189,6 +189,8 @@
     <element xsi:type="archimate:ApplicationComponent" name="Gaia-X Compliance Process Component" id="id-429162ae4e6f4fdf8f1ceb12cb45c410"/>
     <element xsi:type="archimate:ApplicationComponent" name="DID:WEB-as-a-Service (copy)" id="id-9d25285e06c44562b5c31538e76f02da"/>
     <element xsi:type="archimate:ApplicationCollaboration" name="Main Portal and other UIs Component Group" id="id-f99076c5ade744448955dfd6d8eea90f"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Application Collaboration (multiple Application Components)" id="id-80763025163540099d18c2fb289c3c4c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="id-267a6193ea354fed90d2c178462793f5"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-52c689c041a149eaa2529ffdfdb414ad" type="technology">
     <element xsi:type="archimate:Node" name="LGV S3 Bucket" id="id-4fa7b4b594f84c25aa5f4c304e428238"/>
@@ -275,6 +277,7 @@
     <element xsi:type="archimate:Grouping" name="POSSIBLE-X Ecosysem Use Cases" id="id-c0dceb746a3c40ef96e86272d4a7afc7"/>
     <element xsi:type="archimate:Grouping" name="Non-Functional BNetzA Requirements and Architectural Constraints" id="id-38f8b940370f4573a17f9ba368fddebc"/>
     <element xsi:type="archimate:Grouping" name="Basic BNetzA Constraints for Approval" id="id-845beeb5330149b7950138e488053829"/>
+    <element xsi:type="archimate:Grouping" name="Grouping" id="id-af94ca5fd4ff4653aa29117b395387bd"/>
   </folder>
   <folder name="Relations" id="id-7cd0835630844bbb8b0bb54e52e24904" type="relations">
     <element xsi:type="archimate:CompositionRelationship" id="id-30d5f7af55f947f1a2847296ce01ef30" source="id-3041a2e62691412ea219443f3cd52f4e" target="id-13bd0655e84f4db38644850d31b7b53a"/>
@@ -643,6 +646,8 @@
     <element xsi:type="archimate:ServingRelationship" name="is used by" id="id-9ee15e6540ad4bd99b379e4e5aeb8d2a" source="id-3baa2724946141e0bb3b9359d081a9fa" target="id-429162ae4e6f4fdf8f1ceb12cb45c410"/>
     <element xsi:type="archimate:ServingRelationship" name="part of" id="id-1fd437ecffd3484e8d3d1092fb9c5382" source="id-429162ae4e6f4fdf8f1ceb12cb45c410" target="id-e377532025734590a069ed19a308f2d1"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e3da2e5b6c714faa898427593ee40de2" source="id-e377532025734590a069ed19a308f2d1" target="id-429162ae4e6f4fdf8f1ceb12cb45c410"/>
+    <element xsi:type="archimate:ServingRelationship" name="part of" id="id-0ee33913945d4805967a3870e698120e" source="id-19519fb49aa14411a27af3269c9892d0" target="id-e3fb664e58a046218113e019b1eb9cdd"/>
+    <element xsi:type="archimate:ServingRelationship" name="is used by" id="id-6cb700f6e3244707b67044f27ae7d765" source="id-19519fb49aa14411a27af3269c9892d0" target="id-73409743e71c43efb9f41a791b244742"/>
   </folder>
   <folder name="Views" id="id-24b267517651445087010f0ab5bf6706" type="diagrams">
     <folder name="Archive" id="id-ba419053216f4d8d8584b7ff46b96df4">
@@ -2430,7 +2435,7 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="PLAN TARGET Core Component Application Implementation Overview" id="id-9039bc741db64ddfbf5339c22752be65">
       <child xsi:type="archimate:DiagramObject" id="id-569ed362b7ce43b7bd5a1ed73d241044" textAlignment="1" archimateElement="id-54799cc0dba24dd1a0e986f1a0ca9997">
-        <bounds x="-72" y="468" width="289" height="229"/>
+        <bounds x="-72" y="528" width="289" height="229"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-c9b5122e520f4712a9e0b4691df323cb" source="id-569ed362b7ce43b7bd5a1ed73d241044" target="id-ec57bf32f44145d198e566c0d7df5b44" archimateRelationship="id-305dd60981fd4483bcce9d87fb85e109"/>
         <child xsi:type="archimate:DiagramObject" id="id-ec57bf32f44145d198e566c0d7df5b44" targetConnections="id-c9b5122e520f4712a9e0b4691df323cb" fillColor="#ff0000" archimateElement="id-62518f733a074938be1830cbf2e81c60" type="1">
           <bounds x="24" y="48" width="120" height="55"/>
@@ -2438,7 +2443,7 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-c15c8f5f3bda441db2ca67cabea596e7" textAlignment="1" archimateElement="id-0f02fcfd24b046bfaf7f73d7e2baa6b4">
-        <bounds x="-72" y="156" width="289" height="289"/>
+        <bounds x="-72" y="216" width="289" height="289"/>
         <child xsi:type="archimate:Group" id="id-122fa5538fdd47d59b00b3e0e055f4f9" name="Gaia-X Clearing House GXDCH" textAlignment="1">
           <bounds x="24" y="60" width="205" height="193"/>
           <child xsi:type="archimate:DiagramObject" id="id-72b4df39e385429fa036abb60f5040d3" fillColor="#c0c0c0" archimateElement="id-248871ca5fa5460a85918ee4d0cb3861" type="1">
@@ -2456,13 +2461,14 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-d8666abe86b84c48848df2cdf707e8a7" targetConnections="id-4affcc2136ac430db86a158403279bc2" textAlignment="1" archimateElement="id-70fb7239fc4b414fb1a0ebfb3faed197">
-        <bounds x="312" y="156" width="757" height="541"/>
+        <bounds x="312" y="216" width="757" height="541"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-400bf68e34e84f08a2e70545db765068" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-58189664d46b483d96adcc08519c1e38" archimateRelationship="id-9648a778b1b441aeb642cc73da41b9f9"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-93675fc8602246baa147890f517353c7" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-e8c04a2b29cf4c4aa6e82664e4c7daaa" archimateRelationship="id-0324d9c322cf4ac0815c186c398b1fcb"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-bec1d9a6e3b7456c9011d49057b4f600" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" archimateRelationship="id-c3bbd2f4768c44ccba28911aad1139f9"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-b804c14bae7242e08d8e6a0b64080a58" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-3b3de49d461d459b838a9d75187e4d23" archimateRelationship="id-3f11569b8d624569a644a4b6b4ed900b"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-060f6fc56d634adaa5f2afdad581db2a" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-b07dc71959bf4c7ea6216e491e6de6bb" archimateRelationship="id-dfe3c26e44f5454d943738cb64bd2cb6"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-550acff4d5c74eb78237dfb7b28bf111" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-0b08c94bdf0c43338126ddbac412b666" archimateRelationship="id-41cba166cb4e427b837ca9abc4942825"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3c2f192cee714f11a6a3c36222377b04" source="id-d8666abe86b84c48848df2cdf707e8a7" target="id-860d9d1615dd4e51beb15cb5c8db3277" archimateRelationship="id-3dc2379b8d4740fc8fdb0f2637e05f83"/>
         <child xsi:type="archimate:DiagramObject" id="id-58189664d46b483d96adcc08519c1e38" targetConnections="id-400bf68e34e84f08a2e70545db765068 id-0947dc13387d4a709733b48ca706deb5" fillColor="#199374" archimateElement="id-e377532025734590a069ed19a308f2d1" type="1">
           <bounds x="252" y="24" width="276" height="109"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7f13e96631c743f69b747aa15f5c6886" source="id-58189664d46b483d96adcc08519c1e38" target="id-0b08c94bdf0c43338126ddbac412b666" archimateRelationship="id-802c8262fb5a410d839f79d4cf30de32"/>
@@ -2485,7 +2491,7 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
             <sourceConnection xsi:type="archimate:Connection" id="id-0947dc13387d4a709733b48ca706deb5" source="id-1b74b3c552ab41d8807e3882af9b9752" target="id-58189664d46b483d96adcc08519c1e38" archimateRelationship="id-1fd437ecffd3484e8d3d1092fb9c5382"/>
           </child>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-e8c04a2b29cf4c4aa6e82664e4c7daaa" targetConnections="id-93675fc8602246baa147890f517353c7" fillColor="#199374" archimateElement="id-3baa2724946141e0bb3b9359d081a9fa" type="1">
+        <child xsi:type="archimate:DiagramObject" id="id-e8c04a2b29cf4c4aa6e82664e4c7daaa" targetConnections="id-93675fc8602246baa147890f517353c7" fillColor="#ff0000" archimateElement="id-3baa2724946141e0bb3b9359d081a9fa" type="1">
           <bounds x="48" y="324" width="132" height="60"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-8596c8f8995848e1909ee9ad2fe1e1ee" source="id-e8c04a2b29cf4c4aa6e82664e4c7daaa" target="id-3b3de49d461d459b838a9d75187e4d23" archimateRelationship="id-6125b5c5181149e5aaf058f374debd8f"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-b28062eb1ba94ec9a68be55b08a01d22" source="id-e8c04a2b29cf4c4aa6e82664e4c7daaa" target="id-b07dc71959bf4c7ea6216e491e6de6bb" archimateRelationship="id-627ea65c9ccf48cd92871785a557eea5"/>
@@ -2493,13 +2499,15 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
             <bendpoint startX="222" startY="-54" endX="-6" endY="186"/>
           </sourceConnection>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" targetConnections="id-bec1d9a6e3b7456c9011d49057b4f600 id-a117dd542d41465a82a0f8794ddb4c5d id-e36e2130571741d89f8caffd411e19ae" fillColor="#ff0000" archimateElement="id-73409743e71c43efb9f41a791b244742">
+        <child xsi:type="archimate:DiagramObject" id="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" targetConnections="id-bec1d9a6e3b7456c9011d49057b4f600 id-a117dd542d41465a82a0f8794ddb4c5d id-e36e2130571741d89f8caffd411e19ae id-792504be524443089da68635e9c59c98" fillColor="#ff0000" archimateElement="id-73409743e71c43efb9f41a791b244742">
           <bounds x="504" y="456" width="144" height="72"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-daddbf0a79c248b8beec99fcb073e570" source="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" target="id-0b08c94bdf0c43338126ddbac412b666" archimateRelationship="id-ea6bc1bc512a4e70b9e01fe963beb361"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-3b3de49d461d459b838a9d75187e4d23" targetConnections="id-b804c14bae7242e08d8e6a0b64080a58 id-8596c8f8995848e1909ee9ad2fe1e1ee" fillColor="#ff0000" archimateElement="id-e3fb664e58a046218113e019b1eb9cdd">
+        <child xsi:type="archimate:DiagramObject" id="id-3b3de49d461d459b838a9d75187e4d23" targetConnections="id-b804c14bae7242e08d8e6a0b64080a58 id-8596c8f8995848e1909ee9ad2fe1e1ee id-f3d27f11d3a34884866de233023dd869" fillColor="#ff0000" archimateElement="id-e3fb664e58a046218113e019b1eb9cdd">
           <bounds x="60" y="456" width="128" height="64"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-68af6fe1905a4a6f87ec8271c3a37958" source="id-3b3de49d461d459b838a9d75187e4d23" target="id-0b08c94bdf0c43338126ddbac412b666" archimateRelationship="id-c4ffbb3977c2429a8f5df7b0eec7b9d8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-68af6fe1905a4a6f87ec8271c3a37958" source="id-3b3de49d461d459b838a9d75187e4d23" target="id-0b08c94bdf0c43338126ddbac412b666" archimateRelationship="id-c4ffbb3977c2429a8f5df7b0eec7b9d8">
+            <bendpoint startX="32" startY="-80" endX="-408" endY="84"/>
+          </sourceConnection>
           <sourceConnection xsi:type="archimate:Connection" id="id-e36e2130571741d89f8caffd411e19ae" source="id-3b3de49d461d459b838a9d75187e4d23" target="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" archimateRelationship="id-757daa17783e4243afcffc3453b6a1e8"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-b07dc71959bf4c7ea6216e491e6de6bb" targetConnections="id-060f6fc56d634adaa5f2afdad581db2a id-ab6dff327dd14575ae49d234aff11df8 id-b28062eb1ba94ec9a68be55b08a01d22" fillColor="#ff0000" archimateElement="id-d4084b87030a4cc3a3365620a2a6ff61">
@@ -2511,6 +2519,15 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
         <child xsi:type="archimate:DiagramObject" id="id-0b08c94bdf0c43338126ddbac412b666" targetConnections="id-550acff4d5c74eb78237dfb7b28bf111 id-7f13e96631c743f69b747aa15f5c6886 id-68af6fe1905a4a6f87ec8271c3a37958 id-daddbf0a79c248b8beec99fcb073e570" fillColor="#ff0000" archimateElement="id-f99076c5ade744448955dfd6d8eea90f">
           <bounds x="492" y="288" width="145" height="72"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c0aae68983d44895aa0fb8ce4b19b22c" source="id-0b08c94bdf0c43338126ddbac412b666" target="id-2f1a320007714e3b8a3f07dbc882d91b" archimateRelationship="id-5cea7ad71f3b4496a2306e2a19e406da"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-860d9d1615dd4e51beb15cb5c8db3277" targetConnections="id-3c2f192cee714f11a6a3c36222377b04" fillColor="#ff0000" archimateElement="id-19519fb49aa14411a27af3269c9892d0">
+          <bounds x="300" y="396" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f3d27f11d3a34884866de233023dd869" source="id-860d9d1615dd4e51beb15cb5c8db3277" target="id-3b3de49d461d459b838a9d75187e4d23" archimateRelationship="id-0ee33913945d4805967a3870e698120e">
+            <bendpoint startX="-108" startY="-3" endX="128" endY="-68"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="id-792504be524443089da68635e9c59c98" source="id-860d9d1615dd4e51beb15cb5c8db3277" target="id-8ae6c1d438e3470c9ac6bc1bceab4a9a" archimateRelationship="id-6cb700f6e3244707b67044f27ae7d765">
+            <bendpoint startX="96" startY="-3" endX="-120" endY="-72"/>
+          </sourceConnection>
         </child>
       </child>
       <child xsi:type="archimate:Note" id="id-41864879dae64ca9ba615b5f662ad9f4" font="1|Segoe UI|14.25|1|WINDOWS|1|-19|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#199374">
@@ -2529,7 +2546,7 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
 </content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-2f1a320007714e3b8a3f07dbc882d91b" targetConnections="id-c0aae68983d44895aa0fb8ce4b19b22c id-157ca7c240c643c3833f37631ef0b028 id-821fc0a560164de789c03b8f9b7f30e4 id-ad241d590b354f67881521ac315961ec" textAlignment="1" archimateElement="id-c0dceb746a3c40ef96e86272d4a7afc7">
-        <bounds x="1140" y="156" width="229" height="493"/>
+        <bounds x="1140" y="216" width="229" height="493"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-edaceaf1156f43e3957649b723f174fb" source="id-2f1a320007714e3b8a3f07dbc882d91b" target="id-00ed914ed638459aaf4695ab4640ad07" archimateRelationship="id-8a484f39dc304b389de2d0697df4772f"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-81ae5c73cfa347b7ae3af8675589c04a" source="id-2f1a320007714e3b8a3f07dbc882d91b" target="id-57adcaddd570402ba973862f4785cea4" archimateRelationship="id-c12abf1497104b7285198176d59065fe"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-2706bd8556af4d2cb9826b90556a6dbc" source="id-2f1a320007714e3b8a3f07dbc882d91b" target="id-ffc454d2d61f419099370bbfa5fbdf07" archimateRelationship="id-3cf6d97e21ab4c78bb3c51a4d009575f"/>
@@ -2560,6 +2577,15 @@ vueAppCorsproxyApiUrl: 'https://piveau-corsproxy-piveau.apps.osc.fokus.fraunhofe
         <content>Use Case Implementations&#xD;
 &#xD;
 </content>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-b7ac30915edb435fbc8f820a73b3ed0a" fillColor="#ffffff" archimateElement="id-80763025163540099d18c2fb289c3c4c">
+        <bounds x="480" y="36" width="181" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a1df17f1daa041faa620299a00fa4d2d" fillColor="#ffffff" archimateElement="id-267a6193ea354fed90d2c178462793f5" type="1">
+        <bounds x="684" y="36" width="181" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-185952d1734f49efa678fccad7f8c138" textAlignment="1" archimateElement="id-af94ca5fd4ff4653aa29117b395387bd">
+        <bounds x="276" y="36" width="181" height="51"/>
       </child>
     </element>
   </folder>
