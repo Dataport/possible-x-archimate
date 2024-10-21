@@ -5,16 +5,28 @@
     <element xsi:type="archimate:BusinessActor" name="Developer" id="id-f9f4029f0c3c426ba40daf90ed63d3dc"/>
   </folder>
   <folder name="Application" id="id-6499d068d9c94cc6b431de0b893f7c16" type="application">
-    <element xsi:type="archimate:ApplicationComponent" name="Landing Page (aka Main Portal)" id="id-8a134de1de194181b0e968d2cbeee6ef"/>
-    <element xsi:type="archimate:ApplicationComponent" name="EDC" id="id-93d895b79d1541cb9aefed5d10f5b42c"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Possible Catalogue UI" id="id-1f438b97c1fc44ec9297869bcde76c4d"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Registration Portal UI" id="id-5d7102165a35414897db326a6d867ea1"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Landing Page (probably to be included in Possible-X Portal)" id="id-8a134de1de194181b0e968d2cbeee6ef"/>
+    <element xsi:type="archimate:ApplicationComponent" name="EDC" id="id-93d895b79d1541cb9aefed5d10f5b42c">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-edc-extension"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Possible Catalogue UI" id="id-1f438b97c1fc44ec9297869bcde76c4d">
+      <property key="SCM" value="Dev is done on Fraunhofer side. This is outdated https://github.com/POSSIBLE-X/possible-x-catalog-ui"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Possible-X Portal UI" id="id-5d7102165a35414897db326a6d867ea1">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-portal"/>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" name="IONOS S3 UI" id="id-5d282c6ff901426a927ab8c7a0908a48"/>
     <element xsi:type="archimate:ApplicationComponent" name="Fraunhofer Catalogue Backend" id="id-9fe2a762933e403c83f669c60d72ed3b"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Registration Portal Backend" id="id-ff07855fa4224f28af096e6c9eb68c92"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Possible-X Portal Backend" id="id-ff07855fa4224f28af096e6c9eb68c92">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-portal"/>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" name="IONOS S3 Backend" id="id-cd3c35412a5e4e8fbac401ca78fac0a8"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Identity Provider Backend (DAPS)" id="id-4c39a604a6dc4f0085a5b9b352fe4e15"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Participant UI" id="id-d91aed1578f6424795fa1f2dd16665f3"/>
+    <element xsi:type="archimate:ApplicationComponent" name="DAPS (omejdn-server)" id="id-4c39a604a6dc4f0085a5b9b352fe4e15">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/omejdn-plugins"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Participant Portal UI" id="id-d91aed1578f6424795fa1f2dd16665f3">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-participant-portal"/>
+    </element>
     <element xsi:type="archimate:ApplicationInterface" name="EDC Management API" id="id-ae4b6f656c1e4155a1698ea557b2de10"/>
     <element xsi:type="archimate:ApplicationInterface" name="Portal REST API" id="id-ff6311478f5b4f08b859a28c722ae034"/>
     <element xsi:type="archimate:ApplicationInterface" name="Catalogue External API" id="id-ff486af8d7ee40c4b1e0ae3479cc5874"/>
@@ -22,12 +34,23 @@
     <element xsi:type="archimate:ApplicationInterface" name="Dataspace Protocol API" id="id-74a87fc8226744aa880d1222eb966741"/>
     <element xsi:type="archimate:ApplicationComponent" name="Gradle Project" id="id-88caa32bbc7049f086a3baf042df6ac5"/>
     <element xsi:type="archimate:ApplicationComponent" name="workflows for Github Actions" id="id-760918c34aad49a29e17311c1c486e03"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Participant Portal" id="id-8c947d52eb6b4e25abfc2258b9f12f67"/>
-    <element xsi:type="archimate:ApplicationComponent" name="S3 Extention" id="id-cfa8212d97a6455f9c45d11a4a5fd561"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Participant Portal" id="id-8c947d52eb6b4e25abfc2258b9f12f67">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-participant-portal"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="S3 Extention" id="id-cfa8212d97a6455f9c45d11a4a5fd561">
+      <property key="SCM" value="https://github.com/Digital-Ecosystems/edc-ionos-s3"/>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" name="EDC PostgreSQL DB" id="id-841987d0df7f41a28df9022e91150d11"/>
-    <element xsi:type="archimate:ApplicationComponent" name="sd-creation-wizard-api (XFSC)" id="id-df6280a18c8f46f0ae3a20e73b38a078"/>
+    <element xsi:type="archimate:ApplicationComponent" name="catalog-shapes" id="id-df6280a18c8f46f0ae3a20e73b38a078">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/catalog-shapes"/>
+    </element>
     <element xsi:type="archimate:ApplicationComponent" name="Gaia-X Digital Clearing House" id="id-c6702614cef64435bf00e5e363f7bd82"/>
     <element xsi:type="archimate:ApplicationComponent" name="Registration Portal PostgreSQL DB" id="id-22f7ecd27c0048e284fe40c1f4bb349b"/>
+    <element xsi:type="archimate:ApplicationComponent" name="did-web-service" id="id-892751677523414db3315a7bac85a8b6">
+      <property key="SCM" value="https://github.com/POSSIBLE-X/did-web-service"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Policy Extension" id="id-d789fbe16a544e24b54d3eaddc2328c5"/>
+    <element xsi:type="archimate:ApplicationComponent" name="did-web-service PostgreSQL DB" id="id-3ada4b3c3c98459c9d60603205901377"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-e19484f729cf49dbb8056c677f1ccf7f" type="technology">
     <element xsi:type="archimate:Node" name="IONOS CLOUD" id="id-e24e77d1e29949f398dc58d7d2060cc6"/>
@@ -123,12 +146,16 @@
     <element xsi:type="archimate:TriggeringRelationship" name="Call" id="id-2f730dae95b849859cec8a7860881185" source="id-8c947d52eb6b4e25abfc2258b9f12f67" target="id-ae4b6f656c1e4155a1698ea557b2de10"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Persist data" id="id-10737ba0adcc44beb94122f24fefba21" source="id-93d895b79d1541cb9aefed5d10f5b42c" target="id-841987d0df7f41a28df9022e91150d11"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Transform SHACL shapes for frontend" id="id-f7f7317bc0414b1ea81af6ea80c6a4d1" source="id-8c947d52eb6b4e25abfc2258b9f12f67" target="id-df6280a18c8f46f0ae3a20e73b38a078"/>
-    <element xsi:type="archimate:TriggeringRelationship" name="Get Compliance VC for offerings" id="id-8c250de510504e76bd08fc4eb03b54cf" source="id-9fe2a762933e403c83f669c60d72ed3b" target="id-c6702614cef64435bf00e5e363f7bd82"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Get Compliance VC for offerings and legal participants" id="id-8c250de510504e76bd08fc4eb03b54cf" source="id-9fe2a762933e403c83f669c60d72ed3b" target="id-c6702614cef64435bf00e5e363f7bd82"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-76444e7e6e7147a8a5efc3f3efe3c071" source="id-aaa7c3b5cb054050824b34b5b9ce8512" target="id-c6702614cef64435bf00e5e363f7bd82"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-a18e8be2af0a49f589ec0b363c7e82ee" source="id-93d895b79d1541cb9aefed5d10f5b42c" target="id-cfa8212d97a6455f9c45d11a4a5fd561"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Transform SHACL shapes for frontend" id="id-575e6d4523be42298a7ed32df99ea238" source="id-ff07855fa4224f28af096e6c9eb68c92" target="id-df6280a18c8f46f0ae3a20e73b38a078"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Publish Legal Participant" id="id-f179d3cbf4fd4d3a99647a927f9b9f76" source="id-ff07855fa4224f28af096e6c9eb68c92" target="id-ff486af8d7ee40c4b1e0ae3479cc5874"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Persist Registration Requests" id="id-c0d6354fd9fd4c5780fd988377b878d9" source="id-ff07855fa4224f28af096e6c9eb68c92" target="id-22f7ecd27c0048e284fe40c1f4bb349b"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Generate Participant DID:WEB" id="id-c80639441fb7433cb42dc17b323f3d19" source="id-ff07855fa4224f28af096e6c9eb68c92" target="id-892751677523414db3315a7bac85a8b6"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Obtain DID:WEB document with public key" id="id-bd1f8554a2bd40baa88d1c78a371a5ad" source="id-c6702614cef64435bf00e5e363f7bd82" target="id-892751677523414db3315a7bac85a8b6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-47a516bc1fe74fadba5705b0507aaf91" source="id-93d895b79d1541cb9aefed5d10f5b42c" target="id-d789fbe16a544e24b54d3eaddc2328c5"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Persist known DIDs" id="id-e5010c28abb641fd8fd4f19bbc379a16" source="id-892751677523414db3315a7bac85a8b6" target="id-3ada4b3c3c98459c9d60603205901377"/>
   </folder>
   <folder name="Views" id="id-2a85ee574b5d496ea18700740023d7ff" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="New MVD Proposal" id="id-6e1b9e067dcc459a9e07a77953693690">
@@ -147,15 +174,21 @@
       <child xsi:type="archimate:Group" id="id-678fc2a8bf0a44d094b6ca8b27fac589" name="Participant Stack" textAlignment="1">
         <bounds x="288" y="48" width="372" height="660"/>
         <child xsi:type="archimate:DiagramObject" id="id-996e91f9a2f843d9ad1d7aa80b3822da" archimateElement="id-93d895b79d1541cb9aefed5d10f5b42c">
-          <bounds x="24" y="408" width="168" height="109"/>
+          <bounds x="24" y="408" width="301" height="109"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-972798c70bd34181bcfb9dfb48938985" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-da3b0d5f52f543c89ad20473083f877e" archimateRelationship="id-a47c73c6ba08430e91678158e78cd73e"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d1f1db6b0097412bbcc4c681ef501d3f" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-e2942040d86f42389d0ffac1c87cdf1f" archimateRelationship="id-10737ba0adcc44beb94122f24fefba21"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-ea78849f784242978b0a0a3d705a31d7" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-d2b29eb73cc54b0ca919097eb011d87b" archimateRelationship="id-7607d0449a8e4d4f96edfa5b89e2b829"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ea78849f784242978b0a0a3d705a31d7" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-d2b29eb73cc54b0ca919097eb011d87b" archimateRelationship="id-7607d0449a8e4d4f96edfa5b89e2b829">
+            <bendpoint startX="30" startY="-78" endX="-24" endY="45"/>
+          </sourceConnection>
           <sourceConnection xsi:type="archimate:Connection" id="id-92e956fcda56436d9bc33ea4f7f8a350" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-4dec0fcec40643adaa681826886323f1" archimateRelationship="id-12e996831a644c71b6e1a2b9296b8f80"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7b245c2e218c4688be597348ece74529" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-43140ab4b86d429b990e52ec743b57ce" archimateRelationship="id-a18e8be2af0a49f589ec0b363c7e82ee"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b4ed0f549b644c6a817c4ae4f77ba5ad" source="id-996e91f9a2f843d9ad1d7aa80b3822da" target="id-0de84f3ba80042388b8f9fc1f6eeaf54" archimateRelationship="id-47a516bc1fe74fadba5705b0507aaf91"/>
           <child xsi:type="archimate:DiagramObject" id="id-43140ab4b86d429b990e52ec743b57ce" targetConnections="id-7b245c2e218c4688be597348ece74529" archimateElement="id-cfa8212d97a6455f9c45d11a4a5fd561">
             <bounds x="24" y="36" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-00ed6a10edc747ae822f1138c6cfe7f4" source="id-43140ab4b86d429b990e52ec743b57ce" target="id-5a6cc8c88fb646bb946706ddece34f49" archimateRelationship="id-d25a301c889d4f8dbdaf0ced9045745b"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0de84f3ba80042388b8f9fc1f6eeaf54" targetConnections="id-b4ed0f549b644c6a817c4ae4f77ba5ad" archimateElement="id-d789fbe16a544e24b54d3eaddc2328c5">
+            <bounds x="168" y="36" width="120" height="55"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-4dec0fcec40643adaa681826886323f1" targetConnections="id-060499fe91b44d899cd35d8f851bb70f id-92e956fcda56436d9bc33ea4f7f8a350" archimateElement="id-ae4b6f656c1e4155a1698ea557b2de10">
@@ -198,13 +231,13 @@
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-da3b0d5f52f543c89ad20473083f877e" targetConnections="id-dfac5b0da9f04b858a5a9bd7c35d708a id-972798c70bd34181bcfb9dfb48938985" archimateElement="id-4c39a604a6dc4f0085a5b9b352fe4e15">
-        <bounds x="792" y="504" width="120" height="73"/>
+        <bounds x="780" y="504" width="120" height="73"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-590cd79b00d64f2ab2ace0e48f3920f4" targetConnections="id-4deb001cd6754f5e985999939fdc2200 id-58876949fe3f4a9b8ffcf34097ed20a9" archimateElement="id-df6280a18c8f46f0ae3a20e73b38a078">
         <bounds x="720" y="300" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-441d2a58bab2409f9a871dcae7194794" archimateElement="id-8a134de1de194181b0e968d2cbeee6ef">
-        <bounds x="1068" y="84" width="120" height="55"/>
+        <bounds x="1068" y="84" width="120" height="85"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-413e2389678e4526815302a60f8fd9e1" source="id-441d2a58bab2409f9a871dcae7194794" target="id-195210f9d03f4b648caaf7af06e87e18" archimateRelationship="id-4cd8903ee41e423b9c950b833048f6a2"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-c7b89b59998243e1a8e735c496e88b91" source="id-441d2a58bab2409f9a871dcae7194794" target="id-9fc6968111be47b2bff3d3ef8007afc6" archimateRelationship="id-3b1ce505314645afbbc87de66c98bbd9"/>
       </child>
@@ -220,12 +253,14 @@
           <bendpoint startX="372" startY="10" endX="-36" endY="-134"/>
         </sourceConnection>
         <sourceConnection xsi:type="archimate:Connection" id="id-db6a738960e149418324635728b30cf9" source="id-d5db4b200ccb4fcd938383b17a4dc92a" target="id-f9c2d560c6914f258b2c20d33d76a0bc" archimateRelationship="id-c0d6354fd9fd4c5780fd988377b878d9"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-57323c678cd44ccfb777f36e8dc9bcd3" source="id-d5db4b200ccb4fcd938383b17a4dc92a" target="id-2fefda9e51dc4d57bc4842c963441d74" archimateRelationship="id-c80639441fb7433cb42dc17b323f3d19"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-0c380c67b65e4b17bb6694c51d49b3ff" textAlignment="1" archimateElement="id-aaa7c3b5cb054050824b34b5b9ce8512">
         <bounds x="1308" y="576" width="400" height="140"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-a43494b05c2b4bf0b0726246c5ffa63d" source="id-0c380c67b65e4b17bb6694c51d49b3ff" target="id-55499771eb6f4dea9be66a9455f79f3e" archimateRelationship="id-76444e7e6e7147a8a5efc3f3efe3c071"/>
         <child xsi:type="archimate:DiagramObject" id="id-55499771eb6f4dea9be66a9455f79f3e" targetConnections="id-66f83d3b6a264e96b3b3583477e3fa36 id-a43494b05c2b4bf0b0726246c5ffa63d" archimateElement="id-c6702614cef64435bf00e5e363f7bd82">
           <bounds x="144" y="36" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3cd6530766854115936cbda1845cd240" source="id-55499771eb6f4dea9be66a9455f79f3e" target="id-2fefda9e51dc4d57bc4842c963441d74" archimateRelationship="id-bd1f8554a2bd40baa88d1c78a371a5ad"/>
         </child>
       </child>
       <child xsi:type="archimate:Group" id="id-45d68ec9fa664850857dd5ed1e2a0285" name="Fraunhofer Catalogue" textAlignment="1">
@@ -248,8 +283,16 @@
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-f9c2d560c6914f258b2c20d33d76a0bc" targetConnections="id-db6a738960e149418324635728b30cf9" archimateElement="id-22f7ecd27c0048e284fe40c1f4bb349b">
-        <bounds x="960" y="384" width="120" height="55"/>
+        <bounds x="1080" y="432" width="120" height="55"/>
       </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2fefda9e51dc4d57bc4842c963441d74" targetConnections="id-57323c678cd44ccfb777f36e8dc9bcd3 id-3cd6530766854115936cbda1845cd240" archimateElement="id-892751677523414db3315a7bac85a8b6">
+        <bounds x="971" y="612" width="146" height="49"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a2b8e5db13c04ad48ddde48c6afac10b" source="id-2fefda9e51dc4d57bc4842c963441d74" target="id-6bf947e820d045078606712a8e9df377" archimateRelationship="id-e5010c28abb641fd8fd4f19bbc379a16"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-6bf947e820d045078606712a8e9df377" targetConnections="id-a2b8e5db13c04ad48ddde48c6afac10b" archimateElement="id-3ada4b3c3c98459c9d60603205901377">
+        <bounds x="977" y="707" width="133" height="55"/>
+      </child>
+      <property key="SCM" value="https://github.com/POSSIBLE-X/did-web-service"/>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="PLAN TARGET Technology Landscape" id="id-5209985942684709afc0e1a977d8fabf">
       <child xsi:type="archimate:DiagramObject" id="id-dc74367b4b7044f58660697dee1cccd7" targetConnections="id-0ee0007a33c8471895944cbbbd19442d" archimateElement="id-e24e77d1e29949f398dc58d7d2060cc6">
