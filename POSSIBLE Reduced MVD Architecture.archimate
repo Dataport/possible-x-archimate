@@ -15,7 +15,7 @@
       <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-portal"/>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="IONOS S3 UI" id="id-5d282c6ff901426a927ab8c7a0908a48"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Fraunhofer Catalogue Backend" id="id-9fe2a762933e403c83f669c60d72ed3b"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Piveau Catalogue Backend" id="id-9fe2a762933e403c83f669c60d72ed3b"/>
     <element xsi:type="archimate:ApplicationComponent" name="Possible-X Portal Backend" id="id-ff07855fa4224f28af096e6c9eb68c92">
       <property key="SCM" value="https://github.com/POSSIBLE-X/possible-x-portal"/>
     </element>
@@ -40,7 +40,7 @@
       <property key="SCM" value="https://github.com/Digital-Ecosystems/edc-ionos-s3"/>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="EDC PostgreSQL DB" id="id-841987d0df7f41a28df9022e91150d11"/>
-    <element xsi:type="archimate:ApplicationComponent" name="catalog-shapes" id="id-df6280a18c8f46f0ae3a20e73b38a078">
+    <element xsi:type="archimate:ApplicationComponent" name="XFSC Self-Description Wizard" id="id-df6280a18c8f46f0ae3a20e73b38a078">
       <property key="SCM" value="https://github.com/POSSIBLE-X/catalog-shapes"/>
     </element>
     <element xsi:type="archimate:ApplicationComponent" name="Gaia-X Digital Clearing House" id="id-c6702614cef64435bf00e5e363f7bd82"/>
@@ -273,7 +273,7 @@
           <sourceConnection xsi:type="archimate:Connection" id="id-3cd6530766854115936cbda1845cd240" source="id-55499771eb6f4dea9be66a9455f79f3e" target="id-2fefda9e51dc4d57bc4842c963441d74" archimateRelationship="id-bd1f8554a2bd40baa88d1c78a371a5ad"/>
         </child>
       </child>
-      <child xsi:type="archimate:Group" id="id-45d68ec9fa664850857dd5ed1e2a0285" name="Fraunhofer Catalogue" textAlignment="1">
+      <child xsi:type="archimate:Group" id="id-45d68ec9fa664850857dd5ed1e2a0285" name="Fraunhofer Piveau Catalogue" textAlignment="1">
         <bounds x="1344" y="60" width="400" height="360"/>
         <child xsi:type="archimate:DiagramObject" id="id-9fc6968111be47b2bff3d3ef8007afc6" targetConnections="id-9efd285c76464783877310dc94c410e5" archimateElement="id-1f438b97c1fc44ec9297869bcde76c4d">
           <bounds x="228" y="36" width="120" height="55"/>
